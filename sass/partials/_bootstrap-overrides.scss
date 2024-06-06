@@ -1,0 +1,51 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// Then add additional custom code here
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../bootstrap-5.3.3/scss/functions";
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../bootstrap-5.3.3/scss/variables";
+@import "../../bootstrap-5.3.3/scss/variables-dark";
+@import "../../bootstrap-5.3.3/scss/bootstrap.scss";
+
+$custom-theme-colors: (
+  "violet": violet,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+@import "../../bootstrap-5.3.3/scss/nav";
+@import "../../bootstrap-5.3.3/scss/navbar";
+@import "../../bootstrap-5.3.3/scss/buttons";
+@import "../../bootstrap-5.3.3/scss/placeholders";
+@import "../../bootstrap-5.3.3/scss/utilities";
+@import "../../bootstrap-5.3.3/scss/pagination";
+// 4. Include any default map overrides here
+// 5. Include remainder of required parts
+@import "../../bootstrap-5.3.3/scss/maps";
+@import "../../bootstrap-5.3.3/scss/mixins";
+@import "../../bootstrap-5.3.3/scss/root";
+@import "../../bootstrap-5.3.3/scss/dropdown";
+@import "../../bootstrap-5.3.3/scss/buttons";
+@import "../../bootstrap-5.3.3/scss/button-group";
+@import "../../bootstrap-5.3.3/scss/mixins/buttons";
+@import "../../bootstrap-5.3.3/scss/mixins/color-mode";
+// 6. Optionally include any other parts as needed
+@import "../../bootstrap-5.3.3/scss/utilities";
+@import "../../bootstrap-5.3.3/scss/reboot";
+@import "../../bootstrap-5.3.3/scss/type";
+@import "../../bootstrap-5.3.3/scss/images";
+@import "../../bootstrap-5.3.3/scss/containers";
+@import "../../bootstrap-5.3.3/scss/grid";
+@import "../../bootstrap-5.3.3/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+
+// 8. Add additional custom code here
